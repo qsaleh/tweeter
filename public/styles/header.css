@@ -1,0 +1,25 @@
+header {
+  height: 450px;
+  width: 100%;
+  color: #4056A1;
+  background-color: #FFA500;
+  background-image: url("https://www.transparenttextures.com/patterns/arabesque.png");
+  font-size: 20px;
+  font-family: 'Bungee', sans-serif;
+  z-index: 2;
+  
+}
+
+#img-align{
+  position: absolute;
+  top: 130px; 
+  width: 100%;
+  text-align: center;
+}
+
+#name-align{
+  position: absolute; 
+  width: 100%;
+  top: 370px; 
+  text-align: center;
+}

@@ -1,0 +1,16 @@
+nav {
+  height: 120px;
+  color: #FFFFFF;
+  background-color: #4056A1;
+  font-size: 40px;
+  font-family: 'Bungee', sans-serif;
+  z-index: 1;
+  position: fixed;
+  width: 100%;
+}
+
+#nav-align {
+  position: absolute; 
+  bottom: 10%; 
+  left: 20px;
+}

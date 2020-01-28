@@ -1,0 +1,23 @@
+input {
+  background-color: #4056A1;
+  color: #ffffff;
+  font-family: 'Bungee', sans-serif;
+}
+
+.counter {
+  font-family: 'Bungee', sans-serif;
+  width: 50%;
+  margin-left: 85%;
+}
+
+
+#text-input {  
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  background-color: #f4f1ec;
+  width: 100%;
+  border-top: #f4f1ec;
+  border-right: #f4f1ec;
+  border-left: #f4f1ec;;
+  border-bottom: 5px solid #545149;
+}
