@@ -23,3 +23,7 @@ header {
   top: 370px; 
   text-align: center;
 }
+
+.redText {
+  color: red;
+}
