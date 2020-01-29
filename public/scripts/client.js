@@ -42,15 +42,19 @@ const renderTweets = function(tweets) {
 
 const createTweetElement = function(tweet) {
 
-  const markup =
+  const dateToday = Date.now();
+  const datePosted = tweet.created_at;
+  const daysAgo = Math.round((dateToday - datePosted) / 86400000);
+
+  const markUp=
 `
   <article class="tweet">
         <div class="tweet-header"> 
-          <p class="user-name">${tweet.user.name}</p>
+          <p class="user-name"><img src=${tweet.user.avatars}>${tweet.user.name}</p>
           <p class="handle">${tweet.user.handle}</p></div>
           <p class="tweet-text">${tweet.content.text}</p>
-      <div class="tweet-footer">10 days ago</div></article> `;
-      return markup;
+      <div class="tweet-footer">${daysAgo} days ago</div></article> `;
+      return markUp;
 
 }
 
