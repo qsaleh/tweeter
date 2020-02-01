@@ -23,14 +23,49 @@ body {
 }
 
 .container {
+  padding-top: 100px;
   width: 90%;
   position: relative;
   left: 5%;
 }
 
-
-
+#error-message {
+  margin: 50px;
+  font-weight: 400;
+  color: red;
+}
 
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
+
+ @media only screen and (min-width: 1024px){
+   header {
+    width: 25%;
+    height: 350px;
+    float: left;
+    margin-top: 170px;
+    margin-left: 25px;
+   }
+   nav {
+     position: absolute;
+     background-color: #4056A1;;
+   }
+   #img-align {
+    width: 33%;
+    text-align: left;
+    padding-top: 25px;
+   }
+
+   #name-align{
+    width: 33%;
+    text-align: left;
+    padding-top: 100px;
+  }
+  .container {
+    width: 66%; 
+    float: right;
+    left: 0%;
+  }
+  
+ }        

@@ -33,29 +33,28 @@
     <!-- Top nav bar (fixed) -->
     <nav>
       <span id="nav-align">tweeter</span>
-    </nav>
-
+      <button id="nav-down"><b>write</b> a new tweet <br>&#8681;</button>
+    
+  </nav>
     <header>
       <div id="img-align">
-          <img src="/images/profile-hex.png"> 
+          <img src="/images/profile-hex.png"><br>Q Saleh
       </div>
       <br>
-      <div>
-          <h2 id="name-align">Q Saleh</h2>
-      </div>
   </header>
-
+  
     <!-- Page-specific (main) content here -->
     <main class="container"><section class="new-tweet">
+      <p id="error-message"></p>
       <h2>Compose Tweet</h2>
-      <form>
-        <p><textarea id="text-input" name="text" placeholder="What are you humming about?"></textarea></p>
+      <form id="target">
+        <textarea id="text-input" name="text" placeholder="What are you humming about?"></textarea>
         <p style = "margin-top: 0px;">
-        <input type="submit" value="Tweet">
         <span id="counter">140</span>
       </p>
+      <input type="submit" value="Tweet">
       </form>
-</section>
+    </section>
       <section class ="tweet-container">
         </section>
       
