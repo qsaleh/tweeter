@@ -2,7 +2,7 @@
 
 Tweeter is a simple, single-page AJAX based Twitter clone that uses JQuery, HTML5 and CSS. 
 
-This repository contains all the files for the project. This project showcases my skills in HTML, CSS, JS, JQuery and AJAX for front-end and Node, Express and MongoDB for back-end. Tweeter includes, a fixed header, animated buttons and tweet containers, a functional character limit counter, as well as both desktop and tablet/smartphone modes. 
+This repository contains all the files for the Tweeter app. This project showcases my skills in HTML, CSS, JS, JQuery and AJAX for front-end and Node, Express and MongoDB for back-end. Tweeter includes, a fixed header, animated components, a functional character limit counter, as well as both desktop and tablet/smartphone modes. 
 
 ## Screenshots
 
