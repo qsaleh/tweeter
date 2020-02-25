@@ -42,16 +42,25 @@ const createTweetElement = function(tweet) {
 
 }
 
-//renderTweets(tweetData);
+
 $("#nav-down").click(function() {
-  $([document.documentElement, document.body]).animate({
-      scrollTop: $("#img-align").offset().top
-  }, 1200);
+  $(".new-tweet").toggle()
+      
 });
 
 
-$(document).ready(function(){
 
+ function loadTweets() {
+  $.ajax({
+    url: '/tweets',
+    method: 'GET',
+    success: (data) => {
+        renderTweets(data);   
+    }
+  })
+  }
+
+  loadTweets();
   $('#target').on('submit', function (event){
     event.preventDefault();
     const data = $(this).serialize();
@@ -67,24 +76,18 @@ $(document).ready(function(){
     data,
     success: (data) => {
        
-        loadTweets(data);
+        loadTweets();
+        // $('#text-input').val("");
+        $('#target').trigger("reset");
+        $("#counter")[0].innerText = 140;
     },
     error: (error) => {
         console.log('this request failed and this was the error', error);
     }
   });
   
-  function loadTweets(data) {
-  $.ajax({
-    url: '/tweets',
-    method: 'GET',
-    data,
-    success: (data) => {
-        renderTweets(data);   
-    }
-  })
-  }
+ 
 }
  });
-});
+
 });
